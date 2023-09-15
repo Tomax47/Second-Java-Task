@@ -1,0 +1,6 @@
+CREATE TABLE accounts(
+    id SERIAL PRIMARY KEY NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
+    surname VARCHAR(100) NOT NULL,
+    age INTEGER NOT NULL
+)
