@@ -8,5 +8,5 @@ public interface UserInterface <User> {
 
     List<User> findAll();
 
-    void deleteUser(int userID);
+//    void deleteUser(int userID);
 }

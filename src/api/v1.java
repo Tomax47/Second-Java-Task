@@ -24,15 +24,15 @@ public class v1 {
         }
     }
 
-    public void deleteUserById(int id) {
-        try {
-            deleteUserById(id);
-            System.out.println("User has been deleted successfully!");
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Something went wrong, couldn't delete the user!");
-        }
-    }
+//    public void deleteUserById(int id) {
+//        try {
+//            userrepo.deleteUser(id);
+//            System.out.println("User has been deleted successfully!");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            System.out.println("Something went wrong, couldn't delete the user!");
+//        }
+//    }
 
 
     public void findAllUsers() {

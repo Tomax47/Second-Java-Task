@@ -44,16 +44,16 @@ public class UserRepo implements UserInterface<User> {
         }
     }
 
-    public void deleteUser(int userID) {
-        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD)) {
-            PreparedStatement statement = connection.prepareStatement(DELETE_USER);
-            statement.setInt(1, userID);
-            
-            int rowsAffected = statement.executeUpdate();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
+//    public void deleteUser(int userID) {
+//        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD)) {
+//            PreparedStatement statement = connection.prepareStatement(DELETE_USER);
+//            statement.setInt(1, userID);
+//
+//            int rowsAffected = statement.executeUpdate();
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
     @Override
     public List<User> findByAge(int age) {
         List<User> usersByAge = new ArrayList<>();
